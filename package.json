@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-bot-romantis",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp romantis 24/7 untuk pacar",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node bot.js"
+  },
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["whatsapp", "bot", "romantis", "automation"],
+  "author": "MasNabil",
+  "license": "MIT"
+}
