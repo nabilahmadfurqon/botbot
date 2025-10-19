@@ -6,7 +6,7 @@ const path = require('path');
 
 // Setup Express untuk menampilkan QR Code sebagai gambar
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // Serve static files
 app.use(express.static('public'));
