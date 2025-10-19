@@ -1,14 +1,12 @@
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
-// ========== KONFIGURASI BOT ==========
 const pacarData = {
-  name: "Anak Cantik", // GANTI dengan nama pacar
-  yourName: "Mas", // GANTI dengan nama kamu
-  anniversary: "2024-02-14" // GANTI dengan tanggal anniversary
+  name: "Anak Cantik",
+  yourName: "Mas", 
+  anniversary: "2024-02-14"
 };
 
-// Konfigurasi WhatsApp Client untuk Railway - SIMPLIFIED
 const client = new Client({
   authStrategy: new LocalAuth({
     clientId: "bot-romantis-24-7",
@@ -20,10 +18,13 @@ const client = new Client({
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
+      '--disable-accelerated-2d-canvas',
       '--no-first-run',
       '--no-zygote',
-      '--single-process'
-    ]
+      '--single-process',
+      '--disable-gpu'
+    ],
+    executablePath: '/usr/bin/google-chrome-stable'
   }
 });
 
